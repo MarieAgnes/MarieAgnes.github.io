@@ -1,518 +1,610 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <title>Marie agnes Ramanantsoa</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+    <title>Marie Agnes Ramanantsoa | Full-Stack Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Marie Agnes Ramanantsoa, Full-Stack Developer based in Madagascar. Web development, data analysis, project coordination and technical support.">
 
-    <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
 
-    <!-- Google Web Fonts -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
+    <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
-    <!-- Libraries Stylesheet -->
+    <!-- Libraries -->
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
 
-    <!-- Customized Bootstrap Stylesheet -->
+    <!-- Original Bootstrap and CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .skill-line {
+            padding: 12px;
+            border-left: 3px solid #0d6efd;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .skill-title {
+            font-weight: 600;
+            min-width: 150px;
+            color: #0d6efd;
+        }
+
+        .skill-desc {
+            font-size: 14px;
+            color: #555;
+        }
+
+        body {
+            padding-top: 90px;
+        }
+
+        @media (max-width: 575px) {
+            .skill-line {
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-<style>
- .skill-line {
-  padding: 8px 12px;
-  border-left: 3px solid #0d6efd;
-  background-color: #f8f9fa;
-  border-radius: 6px;
-  align-items: center;
-  gap: 10px;
-}
 
-.skill-title {
-  font-weight: 600;
-  min-width: 180px;
-  color: #0d6efd;
-}
-
-.skill-desc {
-  font-size: 14px;
-  color: #555;
-}
-body {
-  padding-top: 90px; /* ajuste selon hauteur navbar */
-}
-
-</style>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
-    <!-- Spinner Start -->
+
+    <!-- Spinner -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="visually-hidden">Loading...</span>
         </div>
     </div>
-    <!-- Spinner End -->
 
-
-    <!-- Navbar Start -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light fixed-top shadow py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
+
+        <a href="#home" class="navbar-brand d-block d-lg-none">
             <h1 class="text-primary fw-bold m-0">Marie Agnes</h1>
         </a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse justify-content-between py-4 py-lg-0" id="navbarCollapse">
+
             <div class="navbar-nav ms-auto py-0">
-                <a href="#home" class="nav-item nav-link active">Accueil</a>
-                <a href="#about" class="nav-item nav-link">Détails</a>
-                <a href="#skill" class="nav-item nav-link">Compétences</a>
-                <a href="#service" class="nav-item nav-link">Services</a>
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#experience" class="nav-item nav-link">Experience</a>
             </div>
-            <a href="index.html" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
+
+            <a href="#home" class="navbar-brand bg-secondary py-3 px-4 mx-3 d-none d-lg-block">
                 <h1 class="text-primary fw-bold m-0">Marie Agnes</h1>
             </a>
+
             <div class="navbar-nav me-auto py-0">
-                <a href="#project" class="nav-item nav-link">Projets</a>
+                <a href="#project" class="nav-item nav-link">Projects</a>
+                <a href="#education" class="nav-item nav-link">Education</a>
                 <a href="#contact" class="nav-item nav-link">Contact</a>
             </div>
+
         </div>
     </nav>
-    <!-- Navbar End -->
 
-
-    <!-- Header Start -->
+    <!-- Header -->
     <div class="container-fluid bg-light my-6 mt-0" id="home">
         <div class="container">
             <div class="row g-5 align-items-center">
+
                 <div class="col-lg-6 py-6 pb-0 pt-lg-0">
-                    <h3 class="text-primary mb-3">Conceptrice de modules e-learning </h3>
-                    <h6><p>Créez des formations digitales claires, interactives et efficaces qui transforment des contenus complexes en apprentissages simples et engageants.</h6>
-                    <h2 class="typed-text-output d-inline"></h2>
-                    <div class="typed-text d-none">Informatique, Développement web, Programmation , Bureautique , Logiciel</div>
-                    <div class="d-flex align-items-center pt-5">
-                        <a href="https://wa.me/261346430090" class="btn btn-primary py-3 px-4 me-5">Lancer mon projet e-learning</a>
-                       
+                    <h3 class="text-primary mb-3">Full-Stack Developer</h3>
+
+                    <h1 class="display-5 mb-4">Marie Agnes Ramanantsoa</h1>
+
+                    <p class="mb-4">
+                        I design and develop modern, reliable web applications
+                        tailored to business needs, from frontend interfaces
+                        to backend systems.
+                    </p>
+
+                    <p class="mb-4">
+                        I enjoy understanding real-world challenges,
+                        designing practical solutions, and delivering
+                        clean, maintainable applications.
+                    </p>
+
+                    <p class="mb-4">
+                        Based in Madagascar · Available to start soon
+                    </p>
+
+                    <div class="d-flex flex-wrap gap-3 pt-3">
+                        <a href="#project" class="btn btn-primary py-3 px-4">
+                            View My Projects
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline-primary py-3 px-4">
+                            Contact Me
+                        </a>
                     </div>
+
+                    <p class="mt-4">
+                        <a href="https://github.com/MarieAgnes" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        ·
+                        <a href="https://www.linkedin.com/in/agnes-ramanantsoa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </p>
                 </div>
+
                 <div class="col-lg-6">
-                    <img class="img-fluid" src="img/marie.webp" alt="image de marie agnes ramanantsoa concepteur e-learning">
+                    <img class="img-fluid" src="img/marie.webp" alt="Marie Agnes Ramanantsoa">
                 </div>
+
             </div>
         </div>
     </div>
-    <!-- Header End -->
 
-
-
-
-
-    <!-- About Start -->
+    <!-- About -->
     <div class="container-xxl py-6" id="about">
         <div class="container">
-            <div class="row g-5">
-               <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-  <div class="d-flex align-items-center mb-5">
-    <div class="years flex-shrink-0 text-center me-4">
-      <h1 class="display-1 mb-0">3</h1>
-      <h5 class="mb-0">ans</h5>
-    </div>
-    <h3 class="lh-base mb-0">
-      dans la formation en informatique
-    </h3>
-  </div>
+            <div class="row g-5 align-items-center">
 
-  <p class="mb-4">
-  Passionnée par l’apprentissage, j’ai évolué des cours particuliers à la formation en ligne et en centre, développant une expertise en conception et structuration de contenus pédagogiques. </p>
+                <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-4">About Me</h1>
 
-  <p class="mb-3">
-    <i class="far fa-check-circle text-primary me-3"></i>
-    Cours live + Démo + Enregistrement
-  </p>
+                    <p>
+                        I am a Full-Stack Developer with experience in
+                        building and improving web applications across
+                        frontend and backend technologies.
+                    </p>
 
-  <p class="mb-3">
-    <i class="far fa-check-circle text-primary me-3"></i>
-    Support video , présentation et PDF 
-  </p>
+                    <p>
+                        I take time to understand each problem, structure
+                        a practical solution, and implement it using
+                        clean and maintainable code.
+                    </p>
 
-  <p class="mb-3">
-    <i class="far fa-check-circle text-primary me-3"></i>
-    Travaux pratique et évaluations Quiz
-  </p>
+                    <p>
+                        Beyond development, my experience includes
+                        data analysis, technical support, project planning,
+                        team coordination, and mentoring junior developers.
+                    </p>
 
-  <a class="btn btn-primary py-3 px-5 mt-3" href="">
-    En savoir plus
-  </a>
-</div>
+                    <p>
+                        I am continuously learning and looking for
+                        opportunities to contribute to meaningful projects,
+                        collaborate with teams, and grow professionally.
+                    </p>
+                </div>
 
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="row g-3 mb-4">
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-1.jpg" alt="">
-                        </div>
-                        <div class="col-sm-6">
-                            <img class="img-fluid rounded" src="img/about-2.jpg" alt="">
-                        </div>
+                <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="bg-light rounded p-4 p-lg-5">
+
+                        <h4 class="mb-4">At a Glance</h4>
+
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Frontend & Backend</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>End-to-End Projects</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Data Analysis</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Project Coordination</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Technical Support</p>
+                        <p><i class="far fa-check-circle text-primary me-3"></i>Based in Madagascar</p>
+                        <p class="mb-0"><i class="far fa-check-circle text-primary me-3"></i>Available Soon</p>
+
                     </div>
-                  <div class="d-flex align-items-center mb-3">
-    <h5 class="border-end pe-3 me-3 mb-0">Accompagnement d’apprenants en cours particuliers et en groupe</h5>
-  
-</div>
-<p class="mb-4">
-    Cette expérience terrain m’a permis de développer une forte capacité d’adaptation pédagogique et une compréhension fine des besoins des apprenants.
-</p>
+                </div>
 
-<div class="d-flex align-items-center mb-3">
-    <h5 class="border-end pe-3 me-3 mb-0">conception de contenus e-learning et de modules de formation digitaux</h5>
-</div>
-<p class="mb-0">
-Des livrables structurés, prêts à être utilisés dans un environnement de formation ou intégrés dans un LMS
-
-</p>
-   </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
 
-
-    <!-- Expertise Start -->
+    <!-- Skills -->
     <div class="container-xxl py-6 pb-5" id="skill">
         <div class="container">
+
+            <h1 class="display-5 mb-5">Skills & Tools</h1>
+
+            <div class="row g-4">
+
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="skill-line d-flex h-100">
+                        <span class="skill-title">Frontend</span>
+                        <span class="skill-desc">
+                            HTML5, CSS3, JavaScript, TypeScript,
+                            React, Angular, Vue.js, Responsive Design
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="skill-line d-flex h-100">
+                        <span class="skill-title">Backend</span>
+                        <span class="skill-desc">
+                            Node.js, Express.js, PHP, CodeIgniter,
+                            Java, Spring Boot, Spring MVC
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="skill-line d-flex h-100">
+                        <span class="skill-title">Desktop</span>
+                        <span class="skill-desc">Java Swing</span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="skill-line d-flex h-100">
+                        <span class="skill-title">Databases</span>
+                        <span class="skill-desc">
+                            PostgreSQL, MySQL, MariaDB, Oracle, Firebase
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="skill-line d-flex h-100">
+                        <span class="skill-title">Development Tools</span>
+                        <span class="skill-desc">
+                            Git, GitHub, Postman, VS Code,
+                            Trello, Figma, Adobe XD
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="skill-line d-flex h-100">
+                        <span class="skill-title">AI Tools</span>
+                        <span class="skill-desc">
+                            ChatGPT, Claude, AI-assisted development,
+                            debugging, documentation and code optimization
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="skill-line d-flex h-100">
+                        <span class="skill-title">Microsoft Office</span>
+                        <span class="skill-desc">
+                            Word, Excel, PowerPoint and office productivity
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="skill-line d-flex h-100">
+                        <span class="skill-title">Google Workspace</span>
+                        <span class="skill-desc">
+                            Google Docs, Sheets, Slides, Drive,
+                            Gmail and collaborative tools
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="skill-line d-flex h-100">
+                        <span class="skill-title">Project Management</span>
+                        <span class="skill-desc">
+                            Planning, task coordination, reporting,
+                            team collaboration and deliverable tracking
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="container-fluid bg-light my-5 py-6" id="experience">
+        <div class="container">
+
+            <h1 class="display-5 mb-5">Professional Experience</h1>
+
+            <div class="row g-4">
+
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="service-item bg-white rounded h-100 p-4 p-lg-5">
+
+                        <p class="text-primary fw-bold">August 2024 – Present</p>
+
+                        <h4>Freelance Developer</h4>
+                        <p class="text-muted">Freelance</p>
+
+                        <ul>
+                            <li>Collaborating with technical teams to develop web and software solutions.</li>
+                            <li>Developing and overseeing digital solutions, including architecture, design and performance optimization.</li>
+                            <li>Managing client projects, schedules, deadlines and deliverable quality.</li>
+                            <li>Coordinating project teams, assigning tasks and tracking deliverables.</li>
+                            <li>Mentoring junior developers and interns.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6 wow fadeInUp">
+                    <div class="service-item bg-white rounded h-100 p-4 p-lg-5">
+
+                        <p class="text-primary fw-bold">July 2022 – September 2023</p>
+
+                        <h4>Junior Web Developer · Data Analyst · Support</h4>
+
+                        <p class="text-muted">Camtrack Madagascar</p>
+
+                        <ul>
+                            <li>Contributed to the development and maintenance of web and software solutions.</li>
+                            <li>Analyzed and processed data to support operational needs.</li>
+                            <li>Provided technical assistance and user support.</li>
+                            <li>Identified and resolved technical issues.</li>
+                        </ul>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="container-xxl py-6 pt-5" id="project">
+        <div class="container">
+
+            <h1 class="display-5 mb-5">Selected Projects</h1>
+
+            <div class="row g-4">
+
+                <!-- E-petitpas -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="service-item bg-light rounded h-100 p-4">
+
+                        <h4 class="mb-3">E-petitpas</h4>
+
+                        <p class="fw-semibold">
+                            Collaborative E-learning Platform · In Development
+                        </p>
+
+                        <p>
+                            An e-learning platform supporting training
+                            catalog management, videos, PDF documents,
+                            SCORM content, quizzes and learner progress tracking.
+                        </p>
+
+                        <p>
+                            My contribution focuses mainly on the Training module,
+                            including interface improvements and the development
+                            of training-related features.
+                        </p>
+
+                        <p class="small text-muted">
+                            <strong>Technologies:</strong>
+                            React, TypeScript, Tailwind CSS, Node.js,
+                            NestJS, Prisma, PostgreSQL, REST API
+                        </p>
+
+                        <a href="https://e-petitpas.fr/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mt-2">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- BabaIvoire -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="service-item bg-light rounded h-100 p-4">
+
+                        <h4 class="mb-3">BabaIvoire</h4>
+
+                        <p class="fw-semibold">
+                            Mobile Application & Digital Platform
+                        </p>
+
+                        <p>
+                            A digital solution designed to connect people
+                            with services and activities in Côte d'Ivoire.
+                        </p>
+
+                        <p>
+                            Contributed to the customization and configuration
+                            of an existing mobile application, including
+                            interface adaptation and backend integration.
+                        </p>
+
+                        <p class="small text-muted">
+                            <strong>Technologies:</strong>
+                            Flutter, Dart, Laravel, PHP
+                        </p>
+
+                        <a href="https://www.babaivoire.fr/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mt-2">
+                            View Project
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Other Projects -->
+                <div class="col-lg-4 col-md-6 wow fadeInUp">
+                    <div class="service-item bg-light rounded h-100 p-4">
+
+                        <h4 class="mb-3">Other Professional Projects</h4>
+
+                        <p class="fw-semibold">
+                            Websites & Business Applications
+                        </p>
+
+                        <p>
+                            Designed and developed professional websites
+                            and web applications for various business needs.
+                        </p>
+
+                        <p>
+                            Projects include Raise Your Project,
+                            IT Mada, a personal portfolio,
+                            a SaaS website, a travel website
+                            and a construction site tracking application.
+                            Some previous projects are no longer available online.
+                        </p>
+
+                        <p class="small text-muted">
+                            <strong>Technologies:</strong>
+                            HTML5, CSS3, JavaScript, PHP,
+                            Laravel, React, Vue.js, Node.js, Figma
+                        </p>
+
+                        <a href="https://raiseyourproject.com/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-primary mt-2">
+                            Raise Your Project
+                        </a>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-4">
+                <a href="https://it-mada.com/" target="_blank" rel="noopener noreferrer">IT Mada</a>
+                ·
+                <a href="https://marieagnes.github.io/" target="_blank" rel="noopener noreferrer">Personal Portfolio</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="container-fluid bg-light my-5 py-6" id="education">
+        <div class="container">
+
+            <h1 class="display-5 mb-5">Education</h1>
+
+            <div class="row g-4">
+
+                <div class="col-lg-6">
+                    <div class="service-item bg-white rounded p-4 h-100">
+
+                        <p class="text-primary fw-bold">2023 – 2024</p>
+
+                        <h4>Master 1 in Computer Science — AI & Data Science</h4>
+
+                        <p>INSI · Ambanidia, Antananarivo, Madagascar</p>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="service-item bg-white rounded p-4 h-100">
+
+                        <p class="text-primary fw-bold">2018 – 2022</p>
+
+                        <h4>Bachelor's Degree in Computer Science — Software Development</h4>
+
+                        <p>IT University · Andoharanofotsy, Antananarivo, Madagascar</p>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="container-xxl pb-5" id="contact">
+        <div class="container py-5">
+
             <div class="row g-5">
-           <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-    <h1 class="display-5 mb-5">Compétences</h1>
-    <p class="mb-4">
-        Je conçois des expériences d’apprentissage adaptées au niveau, au rythme et aux besoins réels des apprenants.
-    </p>
 
-    <h3 class="mb-4">Mes Compétences</h3>
-<div class="container my-4">
-  <div class="row">
+                <div class="col-lg-5">
 
-    <div class="col-12 mb-3">
-      <div class="skill-line d-flex">
-        <span class="skill-title">Technique IT</span>
-        <span class="skill-desc">Développement web, programmation, bureautique, IA, logiciels</span>
-      </div>
-    </div>
+                    <h1 class="display-5 mb-4">Get in Touch</h1>
 
-    <div class="col-12 mb-3">
-      <div class="skill-line d-flex">
-        <span class="skill-title">Création Digitale</span>
-        <span class="skill-desc">Canva, H5P , CapCut, OBS Studio , etc</span>
-      </div>
-    </div>
+                    <p>
+                        Have a project, an opportunity, or a question?
+                        Feel free to reach out.
+                        I would be happy to discuss how I can contribute.
+                    </p>
 
-    <div class="col-12 mb-3">
-      <div class="skill-line d-flex">
-        <span class="skill-title">Agilité & Collaboration</span>
-        <span class="skill-desc">
-        Apprentissage rapide de nouveaux domaines et outils en cas de besoin
-        </span>
-      </div>
-    </div>
-
-  </div>
-</div>
-</div>
-
-               <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
-        <li class="nav-item w-50">
-            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">
-                Formation
-            </button>
-        </li>
-        <li class="nav-item w-50">
-            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">
-                e-learning
-            </button>
-        </li>
-    </ul>
-
-    <div class="tab-content">
-        <!-- EXPERIENCE -->
-        <div id="tab-1" class="tab-pane fade show p-0 active">
-            <div class="row gy-5 gx-4">
-
-                <div class="col-sm-6">
-                    <h5 class="text-primary mb-1">Dispositifs de formation</h5>
-                       <hr class="text-primary my-2">
-                    <h6 class="mb-0">Concevoir des plannings de formation</h6>
-                </div>
-
-                <div class="col-sm-6">
-                    <h5 class="text-primary mb-1">Évaluation des acquis & création de quiz</h5>
-                     <hr class="text-primary my-2">
-                    <h6 class="mb-0">conçevoir des évaluations </h6>
-                </div>
-                  <div class="col-sm-6">
-                    <h5 class="text-primary mb-1">Projets pédagogiques</h5>
-                     <hr class="text-primary my-2">
-                    <h6 class="mb-0">Conception et mise en œuvre de projets pédagogiques concrets (TP et dispositifs de formation)</h6>
-                  </div>
-
-            </div>
-        </div>
-
-        <!-- FORMATION -->
-        <div id="tab-2" class="tab-pane fade show p-0">
-            <div class="row gy-5 gx-4">
-
-                <div class="col-sm-6">
-                    <h5 class="text-primary mb-1">Production de supports de formation</h5>
-                    <hr class="text-primary my-2">
-                    <h6 class="mb-0">Réalisation des supports.</h6>
-                </div>
-
-                 <div class="col-sm-6">
-                    <h5 class="text-primary mb-1">Contenus interactifs (vidéo, quiz, exercices)</h5>
-                    <hr class="text-primary my-2">
-                    <h6 class="mb-0">Développement des contenus dynamiques.</h6>
-                </div>
-
-                   <div class="col-sm-6">
-                    <h5 class="text-primary mb-1">Intégration LMS</h5>
-                    <hr class="text-primary my-2">
-                    <h6 class="mb-0">Préparation des contenus compatibles avec les plateformes LMS pour une diffusion fluide et professionnelle.</h6>
-                </div>
-
-
-            </div>
-        </div>
-    </div>
-</div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Expertise End -->
-
-
-    <!-- Service Start -->
-    <div class="container-fluid bg-light my-5 py-6" id="service">
-    <div class="container">
-        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="col-lg-6">
-                <h1 class="display-5 mb-0">Mes Services</h1>
-            </div>
-            <div class="col-lg-6 text-lg-end">
-                <a class="btn btn-primary py-3 px-5" href="https://wa.me/261346430090">Obtenir une proposition</a>
-            </div>
-        </div>
-        <div class="row g-4">
-
-            <!-- Développement Web -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                    <div class="bg-icon flex-shrink-0 mb-3">
-                     <i class="fa fa-project-diagram fa-2x text-dark"></i>
-                    </div>
-                    <div class="ms-sm-4">
-                        <h4 class="mb-3">Production de contenus de formation</h4>
-                        <span> Booster les réussites au premier essai sur les manipulations techniques après visionnage des démos de cas pratiques
-
-</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Développement Logiciel -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                    <div class="bg-icon flex-shrink-0 mb-3">
-                        <i class="fa fa-laptop-code fa-2x text-dark"></i>
-                    </div>
-                    <div class="ms-sm-4">
-                        <h4 class="mb-3">Conception e-learning</h4>
-                        <span> Réduction du temps d'apprentissage grâce à la transformation de contenus complexes en modules clairs et progressifs</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Formation / Tutoriat -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                    <div class="bg-icon flex-shrink-0 mb-3">
-                        <i class="fa fa-chalkboard-teacher fa-2x text-dark"></i>
-                    </div>
-                    <div class="ms-sm-4">
-                        <h4 class="mb-3">Conception contenus digitaux</h4>
-                        <span>Supports 100% accessibles 24H/7j et adaptés aux différents niveaux </span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mise en relation avec développeurs spécialisés -->
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item d-flex flex-column flex-sm-row bg-white rounded h-100 p-4 p-lg-5">
-                    <div class="bg-icon flex-shrink-0 mb-3">
-                        <i class="fa fa-users fa-2x text-dark"></i>
-                    </div>
-                    <div class="ms-sm-4">
-                        <h4 class="mb-3">Création de quiz ,projets pédagogiques et évaluations</h4>
-                        <span> Identification précise des lacunes techniques pour tous les apprenants grâce à des évaluations interactives et au suivi des résultats
-</span>
-                    </div>
-                </div>
-            </div>
-
-        
-
-        </div>
-    </div>
-</div>
-
-    <!-- Service End -->
-
-
-    <!-- Projects Start -->
-   <div class="container-xxl py-6 pt-5" id="project">
-<div id="featurable-615941e8-d364-48f0-89de-c1dfafa7c1aa" data-featurable-async ></div><script src="https://featurable.com/assets/bundle.js" defer charset="UTF-8"></script>
-    <div class="container">
-        <div class="row g-5 mb-5 align-items-center">
-            <div class="col-lg-8">
-                <h1 class="display-5 mb-2">Exemple de video </h1>
-<div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden; max-width:100%;">
-  <iframe 
-    src="https://agnes.e-petitpas.fr/wp-admin/admin-ajax.php?action=h5p_embed&id=2"
-    style="position:absolute; top:0; left:0; width:100%; height:100%;"
-    frameborder="0"
-    allowfullscreen
-    title="Cours RechercheV Marie Agnes">
-  </iframe>
-</div>
-
-<script src="https://agnes.e-petitpas.fr/wp-content/plugins/h5p/h5p-php-library/js/h5p-resizer.js"></script>
-            </div>
-        </div>
-
-        <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.1s">
-
-            <!-- Projet 1 -->
-            <div class="col-lg-4 col-md-6 portfolio-item">
-                <div class="portfolio-img rounded overflow-hidden">
-                   
-                    <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                           href="img/raise1.png" data-lightbox="portfolio">
-                            <i class="fa fa-eye"></i>
+                    <p>
+                        <i class="fa fa-envelope text-primary me-2"></i>
+                        <a href="mailto:marieagnesramanantsoa@gmail.com">
+                            marieagnesramanantsoa@gmail.com
                         </a>
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                           href="https://www.raiseyourproject.com/" target="_blank">
-                            <i class="fa fa-link"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+                    </p>
 
-    
+                    <p>
+                        <a href="https://github.com/MarieAgnes" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        ·
+                        <a href="https://www.linkedin.com/in/agnes-ramanantsoa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </p>
 
-            <!-- Projet 3 -->
-            <div class="col-lg-4 col-md-6 portfolio-item">
-                <div class="portfolio-img rounded overflow-hidden">
-                    <div class="portfolio-btn">
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                           href="img/babaivoire1.png" data-lightbox="portfolio">
-                            <i class="fa fa-eye"></i>
-                        </a>
-                        <a class="btn btn-lg-square btn-outline-secondary border-2 mx-1"
-                           href="https://babaivoire.fr/" target="_blank">
-                            <i class="fa fa-link"></i>
-                        </a>
-                    </div>
                 </div>
+
+                <div class="col-lg-7">
+
+                    <form action="https://formspree.io/f/xgawoyyr" method="POST">
+
+                        <div class="row g-3">
+
+                            <div class="col-md-6">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" id="name" name="name" class="form-control" autocomplete="name" required>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" id="email" name="email" class="form-control" autocomplete="email" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary py-3 px-5">
+                                    Send Message
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
             </div>
 
         </div>
     </div>
-</div>
 
-    <!-- Projects End -->
-
-
-
-
-  <!-- Contact Start -->
-<div class="container-xxl pb-5" id="contact">
-    <div class="container py-5">
-        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="col-lg-6">
-                <h1 class="display-5 mb-0">Essayer les services</h1>
-            </div>
-            <div class="col-lg-6 text-lg-end">
-                <a href="https://wa.me/261346430090" target="_blank" class="btn btn-success py-3 px-5">
-            💬 Poser des questions
-        </a>
-            </div>
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-5 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-               
-                <hr class="w-100">
-                <p class="mb-2">Réseaux sociaux :</p>
-                <div class="d-flex pt-2">
-                    <a class="btn btn-square btn-primary me-2" href="https://www.facebook.com/marieagnes.ramanantsoa/"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-square btn-primary me-2" href="https://www.linkedin.com/in/agnes-ramanantsoa/"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-    <div class="col-lg-7 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-    <p class="mb-4">
-        Vous pouvez me contacter directement via WhatsApp. Cliquez sur le bouton ci-dessus pour démarrer la conversation.
-    </p>
-    <div class="d-flex justify-content-lg-end">
-        
-    </div>
-</div>
-
-
-        </div>
-    </div>
-</div>
-<!-- Contact End -->
-
-
-
-    <!-- Map Start -->
- 
-
-    <!-- Map End -->
-
-
-    <!-- Copyright Start -->
+    <!-- Footer -->
     <div class="container-fluid bg-dark text-white py-4">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom text-secondary" href="#">Marie agnes portfolio</a>.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Par  <a class="border-bottom text-secondary" href="https://htmlcodex.com">Marie Agnes</a>
-                           </div>
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    &copy; Marie Agnes Ramanantsoa. All rights reserved.
                 </div>
+
+                <div class="col-md-6 text-center text-md-end">
+                    Template by
+                    <a class="border-bottom text-secondary" href="https://htmlcodex.com">
+                        HTML Codex
+                    </a>
+                </div>
+
             </div>
         </div>
     </div>
-    <!-- Copyright End -->
-
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -526,8 +618,8 @@ Des livrables structurés, prêts à être utilisés dans un environnement de fo
     <script src="lib/isotope/isotope.pkgd.min.js"></script>
     <script src="lib/lightbox/js/lightbox.min.js"></script>
 
-    <!-- Template Javascript -->
+    <!-- Template JavaScript -->
     <script src="js/main.js"></script>
-</body>
 
+</body>
 </html>
